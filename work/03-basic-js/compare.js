@@ -1,10 +1,29 @@
 "use strict";
-/* DO NOT MODIFY EXCEPT WHERE ALLOWED */
-module.exports = compare; // DO NOT MODIFY - USED FOR TESTING
 
-function compare( word, guess ) {  // DO NOT MODIFY
+module.exports = compare;
 
-/* YOU MAY MODIFY THE LINES BELOW */
+function compare( word, guess ) {
 
-  return 0; // this line is wrong
+  word = word.toLowerCase();
+  guess = guess.toLowerCase();
+
+  const wordLetterCount = {};
+
+  for (const letter of word) {
+    if (!wordLetterCount[letter]) {
+      wordLetterCount[letter] = 0;
+    }
+    wordLetterCount[letter]++;
+  }
+
+  let commonCount = 0;
+
+  for (const letter of guess) {
+    if (wordLetterCount[letter] && wordLetterCount[letter] > 0) {
+      commonCount++;
+      wordLetterCount[letter]--;
+    }
+  }
+
+  return commonCount;
 }
