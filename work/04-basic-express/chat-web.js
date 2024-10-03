@@ -6,12 +6,12 @@ const chatWeb = {
   // chatPage() returns the HTML for the page
   // it calls the other methods to generate the HTML for different sections
   chatPage: function(chat) {
-    // Fill in/modify anything below!
     return `
       <!doctype html>
       <html>
         <head>
           <title>Chat</title>
+          <link rel="stylesheet" href="chat.css">
         </head>
         <body>
           <div id="chat-app">
@@ -26,8 +26,16 @@ const chatWeb = {
 
   getMessageList: function(chat) {
     return `<ol class="messages">` +
-      // Fill in
       // Generate the HTML for the list of messages
+      chat.messages.map(message => `
+        <li class="message">
+          <div class="sender-info">
+            <img class="avatar" alt="avatar of ${message.sender}" src="images/avatar-${message.sender.toLowerCase()}.jpg"/>
+            <span class="username">${message.sender}:</span> 
+          </div>
+          <p class="message-text">${message.text}</p>
+        </li>
+      `).join('') +
       `</ol>`;
   },
   getUserList: function(chat) {
@@ -41,6 +49,7 @@ const chatWeb = {
     Object.values(chat.users).map( user => `
       <li>
         <div class="user">
+          <img class="avatar" alt="avatar of ${user}" src="images/avatar-${user.toLowerCase()}.jpg"/>
           <span class="username">${user}</span>
         </div>
       </li>
@@ -48,8 +57,17 @@ const chatWeb = {
     `</ul>`;
   },
   getOutgoingSection: function() {
-    // Fill in
     // Generate the HTML for a form to send a message
+    return `
+      <div class="outgoing">
+          <form action="/chat" method="POST" class="outgoing-form">
+              <input type="hidden" name="username" value="Amit"/>
+              <label for="text">Message:</label>
+              <input id="text" name="text" type="text" class="to-send" required/>
+              <button type="submit" class="button-submit">Send</button>
+          </form>
+      </div>
+    `;
   }
 };
 module.exports = chatWeb;
