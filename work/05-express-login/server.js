@@ -1,3 +1,5 @@
+"use strict";
+
 const express = require('express');
 const cookieParser = require('cookie-parser');
 const sessionStore = require('./models/session');  
