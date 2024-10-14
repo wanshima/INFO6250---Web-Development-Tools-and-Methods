@@ -1,0 +1,45 @@
+.page-body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.page-title {
+    color: #333;
+}
+
+.form {
+    margin-bottom: 20px;
+}
+
+.input, .button {
+    padding: 8px;
+    margin: 5px;
+}
+
+.button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.link {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.stored-word {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
