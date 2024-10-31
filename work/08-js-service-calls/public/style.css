@@ -74,12 +74,12 @@
 }
 
 @media (max-width: 600px) {
-.app {
-    padding: 10px;
-}
+    .app {
+        padding: 10px;
+    }
 
-.input {
-    width: 100%;
-}
+    .input {
+        width: 100%;
+    }
 }
   
