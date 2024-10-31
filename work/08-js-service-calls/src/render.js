@@ -40,6 +40,7 @@ function renderWordView(state, rootEl) {
         <input class="input" type="text" name="word" id="word" value="${storedWord}" />
         <button class="button" type="submit">Update Word</button>
       </form>
+      ${storedWord ? `<p class="stored-word">Your stored word is: <strong>${storedWord}</strong></p>` : ''}
     </div>
   `;
 

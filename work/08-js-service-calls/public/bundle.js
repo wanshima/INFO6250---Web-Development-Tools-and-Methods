@@ -98,7 +98,7 @@ function renderWordView(state, rootEl) {
   var username = state.username,
     storedWord = state.storedWord,
     error = state.error;
-  var html = "\n    <div class=\"nav\">\n      <span>Welcome, ".concat(username, "</span>\n      <button class=\"button\" id=\"logout-btn\">Logout</button>\n    </div>\n    ").concat(error ? "<div class=\"error\">".concat(error, "</div>") : '', "\n    <div class=\"content\">\n      <form class=\"form\" id=\"word-form\">\n        <label class=\"label\" for=\"word\">Your Stored Word:</label>\n        <input class=\"input\" type=\"text\" name=\"word\" id=\"word\" value=\"").concat(storedWord, "\" />\n        <button class=\"button\" type=\"submit\">Update Word</button>\n      </form>\n    </div>\n  ");
+  var html = "\n    <div class=\"nav\">\n      <span>Welcome, ".concat(username, "</span>\n      <button class=\"button\" id=\"logout-btn\">Logout</button>\n    </div>\n    ").concat(error ? "<div class=\"error\">".concat(error, "</div>") : '', "\n    <div class=\"content\">\n      <form class=\"form\" id=\"word-form\">\n        <label class=\"label\" for=\"word\">Your Stored Word:</label>\n        <input class=\"input\" type=\"text\" name=\"word\" id=\"word\" value=\"").concat(storedWord, "\" />\n        <button class=\"button\" type=\"submit\">Update Word</button>\n      </form>\n      ").concat(storedWord ? "<p class=\"stored-word\">Your stored word is: <strong>".concat(storedWord, "</strong></p>") : '', "\n    </div>\n  ");
   rootEl.innerHTML = html;
 }
 

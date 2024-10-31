@@ -73,6 +73,11 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.stored-word {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
 @media (max-width: 600px) {
     .app {
         padding: 10px;
