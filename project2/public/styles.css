@@ -1,0 +1,195 @@
+.body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+}
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.app-title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.status {
+  padding: 10px;
+  margin-bottom: 10px;
+  color: red;
+  font-weight: bold;
+}
+
+.login {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login__form label {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.login__username {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login__button {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.login__button:hover {
+  background-color: #45a049;
+}
+
+.login__waiting {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+}
+
+.controls {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.controls__logout-button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #e53935; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.controls__logout-button:hover {
+  background-color: #d32f2f;
+}
+
+.users-list {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.users-list h3 {
+  margin-top: 0;
+}
+
+.users-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.users-list li {
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.messages {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  flex-grow: 1;
+  overflow-y: auto;
+  max-height: 400px;
+}
+
+.message {
+  margin-bottom: 15px;
+}
+
+.message .username {
+  font-weight: bold;
+  color: #2196f3;
+  margin-right: 5px;
+}
+
+.messages__waiting {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+}
+
+.message-form {
+  display: flex;
+  margin-top: 10px;
+}
+
+.message-input {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+.message-form__button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #2196f3; 
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.message-form__button:hover {
+  background-color: #1976d2;
+}
+
+.chat-content {
+  display: flex;
+}
+
+.users-list-container,
+.messages-container {
+  width: 50%;
+  padding: 10px;
+}
+
+.users-list-container {
+  background-color: #f9f9f9;
+  border-right: 1px solid #ddd;
+}
+
+.messages-container {
+  background-color: #fff;
+  overflow-y: auto;
+  max-height: 400px;
+}
+
+.login__waiting {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  margin-top: 50px;
+}
