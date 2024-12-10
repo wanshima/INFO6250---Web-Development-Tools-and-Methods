@@ -86,7 +86,7 @@ function Item({ item, isLastAdded, onDeleteItem, onUpdateItem, isLoggedIn }) {
         />
       )}
 
-      <div className={`item-title ${item.sold ? 'item--sold' : ''}`}>
+      <div className={`item-title ${item.sold ? 'item-sold' : ''}`}>
         <strong>{item.title}</strong>
         {item.price !== undefined && (
           <>
